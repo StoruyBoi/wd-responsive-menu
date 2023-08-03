@@ -1,0 +1,169 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@500&display=swap');
+
+
+
+*{
+    font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+padding: 0;
+margin: 0;
+
+}
+button{
+    display: flex;
+    border: none;
+    background: white;
+}
+
+
+/*                   nav bar styling      */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    color: white;
+    position: sticky;
+    top: 0;
+    align-items: center;
+background: #121212;
+  
+
+
+}
+
+.navbar h1{
+    font-size: 2rem;
+  
+
+
+}
+.navbar.active{
+    transition: 0.3s;
+
+    background: #1F1F1F;
+        border-bottom: 2px solid #00000024;
+}
+.nav-links{
+
+display: flex;
+gap: 30px;
+    list-style: none;
+
+
+}
+.darkthme{
+    display: none;
+}
+.activeeeee{
+    color: salmon; 
+}
+ul > li:hover{
+    color: salmon;
+}
+/*                       preloader stying               */
+.preloader{
+
+display: flex;
+    height: 100vh;
+    width: 100%;
+    background: black;
+color: white;
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+z-index: 55;
+justify-content: center;
+ align-items: center;
+ overflow: hidden;
+}
+
+
+.preloader > .texts-container{
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 60px;
+width: 280px;
+font-size: 20px;
+font-weight: 800;
+overflow: hidden;
+color: white;
+
+}
+
+
+/*                              main content styling */
+
+.Mainconter{
+
+    overflow: auto;
+background: #121212;
+color: white;
+padding: 20px;
+display: flex;
+flex-direction: column;
+
+}
+.forp{
+
+    width: 60%;
+    /* margin-top: 20px; */
+    margin: auto;
+    padding: 20px;
+
+}
+.car-container{
+background: #1F1F1F;
+    display: flex;
+
+    width: min-content;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    gap: 10px;
+}
+.car-container img{
+width: 300px;
+}
+.Continaer_box {
+   
+    gap: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+    /* margin-top: 20px; */
+    margin: auto;
+}
+
+
+@media screen and (max-width: 519px) {
+
+.nav-links{
+    display: none;
+}
+.darkthme{
+    display: block;
+}
+
+.nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    text-align: center;
+    height: 100vh;
+    padding: 55px;
+    background: #121212;
+    left: 0;
+    top: 75px;
+    transition: all 0.5s ease-in-out;
+    width: -webkit-fill-available;
+}
+
+
+  }
